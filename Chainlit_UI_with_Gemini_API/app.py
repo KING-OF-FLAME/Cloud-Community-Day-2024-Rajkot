@@ -14,7 +14,7 @@ api_key = "APAIzaSyCDEJJHYZ-NMAIq2QbvimTUycTVqqvCIjAI"
 async def on_chat_start():
     #model = ChatOpenAI(streaming=True)
     
-    model = GoogleGenerativeAI(model="gemini-pro",google_api_key=api_key,
+    model = GoogleGenerativeAI(model="gemini-2.0-flash",google_api_key=api_key,
     safety_settings={
         HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT: HarmBlockThreshold.BLOCK_NONE,
     },
